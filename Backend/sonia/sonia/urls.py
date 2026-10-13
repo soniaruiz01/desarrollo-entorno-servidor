@@ -15,11 +15,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
 from . import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.homepage),
+    path('sonia-server/', include('sonia_server.urls')),
 ]
 # This file defines the URL routes and connects the homepage URL to the homepage view.
