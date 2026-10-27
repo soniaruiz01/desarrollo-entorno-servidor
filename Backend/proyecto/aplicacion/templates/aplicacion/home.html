@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCommunity | Comunidad del motor</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <header>
+        <h2>AutoCommunity</h2>
+        <nav>
+            <a href="/">Inicio</a>
+            <a href="#comunidad">Comunidad</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Bienvenido a AutoCommunity</h1>
+            <p>
+                Comparte tu pasión por el mundo del motor.
+                Descubre encuentros de coches, organiza rutas
+                y conecta con otros amantes de la automoción.
+            </p>
+            <a href="#comunidad" class="boton">Descubrir comunidad</a>
+        </section>
+
+        <section id="comunidad" class="comunidad">
+            <h2>Vive tu pasión por los coches</h2>
+            <p>
+                AutoCommunity es un espacio para conocer a otros
+                aficionados, compartir experiencias y descubrir
+                nuevas oportunidades para disfrutar del motor.
+            </p>
+
+            <div class="contenedor-tarjetas">
+                <article class="tarjeta">
+                    <h3>Encuentros</h3>
+                    <p>
+                        Descubre concentraciones y eventos de coches
+                        cerca de tu zona.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Rutas</h3>
+                    <p>
+                        Comparte rutas y disfruta conduciendo
+                        con otros aficionados.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Comunidad</h3>
+                    <p>
+                        Conoce a personas con tus mismos intereses
+                        y comparte tus experiencias.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <p>&copy; 2026 AutoCommunity. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
