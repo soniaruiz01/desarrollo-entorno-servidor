@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
-<body>
+<body>ff
     <header>
         <h2>AutoCommunity</h2>
 
         <nav>
             <a href="/">Inicio</a>
             <a href="#comunidad">Comunidad</a>
+            <a href="{% url 'aplicacion:aplicacion' %}">Aplicación</a>
         </nav>
     </header>
 
     <main>
         <section class="hero" id="comunidad">
             <h1>¡Bienvenido a AutoCommunity!</h1>
-
+            <img src="{% static 'images/images.jpg' %}"> 
             <p>
                 Un espacio para los amantes del motor.
                 Descubre nuevas experiencias, comparte tu pasión
