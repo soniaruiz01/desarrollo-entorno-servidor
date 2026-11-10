@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a AutoCommunity</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>ff
+    <header>
+        <h2>AutoCommunity</h2>
+
+        <nav>
+            <a href="/">Inicio</a>
+            <a href="#comunidad">Comunidad</a>
+            <a href="{% url 'aplicacion:aplicacion' %}">Aplicación</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="comunidad">
+            <h1>¡Bienvenido a AutoCommunity!</h1>
+            <img src="{% static 'images/images.jpg' %}"> 
+            <p>
+                Un espacio para los amantes del motor.
+                Descubre nuevas experiencias, comparte tu pasión
+                por los coches y conecta con personas que
+                disfrutan del mundo de la automoción.
+            </p>
+
+            <a href="#comunidad" class="boton">
+                Descubre nuestra comunidad
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AutoCommunity. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
